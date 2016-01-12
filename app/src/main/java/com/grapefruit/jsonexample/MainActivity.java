@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
     JSONArray jsonArray;
     String str, json;
 
-    public static MainActivity cfx;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new JsonAdapter());
-
-        this.cfx = this;
     }
 
     private Boolean isNetwork() {
